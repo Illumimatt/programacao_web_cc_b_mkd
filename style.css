@@ -2,13 +2,14 @@
     text-align: center;
     color: magenta;
 }
+
+.entradas-usuario {
+    border: 1px solid;
+    text-align: center;
+}
+
 .rodape {
     color:magenta;
     text-align: center;
-    border: 1px, solid;
-}
-
-.entradas-usuario {
-    border: 1px, solid;
-    text-align: center;
+    border: 1px solid;
 }
