@@ -2,3 +2,5 @@
 abububle
 
 ## altercao feita no vscode de navegador
+
+## alteracao feita no vscode normal
