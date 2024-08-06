@@ -1,0 +1,13 @@
+#titulo{
+    text-align: center;
+    color: magenta;
+}
+.rodape {
+    color:magenta;
+    text-align: center;
+    border: 1px, solid;
+}
+
+.entrada_usuario {
+    border: 1px, solid;
+}
