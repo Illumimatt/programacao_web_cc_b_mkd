@@ -4,12 +4,32 @@
 }
 
 .entradas-usuario {
-    border: 1px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid magenta;
+    border-radius: 4px;
     text-align: center;
+    color: magenta;
+    margin: 10px;
 }
+
+.entradas-usuario input {
+    display: block; 
+    margin: 0 auto 10px;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid magenta;
+    border-radius: 4px;
+}
+
 
 .rodape {
     color:magenta;
     text-align: center;
     border: 1px solid;
+    border-radius: 4px;
+}
+
+body {
+    background-color: black;
 }
