@@ -26,8 +26,9 @@ function validaNCC(ncc){
         return false;
     }
 
-    if(/^[\d.-]+$/.test(ncc)) {
-        console.log("ncc ta certo")
+    if(!/^[\d.-]+$/.test(ncc)) {
+        alert("Cartão de credito só pode ter numeros, pontos e hifens")
+        return false
     }
 
     return true
