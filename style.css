@@ -8,14 +8,19 @@
 }
 
 .entradas-usuario {
-    box-sizing: border-box;
+    position: absolute;
+    width: 50%;
     padding: 10px;
     border: 1px solid magenta;
     border-radius: 4px;
-    text-align: center;
     color: magenta;
+    background-color: purple;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
 .entradas-usuario input {
     display: block; 
     margin: 0 auto 10px;
@@ -28,15 +33,16 @@
 
 .rodape {
     color:magenta;
+    background-color:purple;
     text-align: center;
     border: 1px solid;
     border-radius: 6px;
-    padding: 2px;
+    padding: 3px;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
 body {
-    background-color: black;
+    background-image: url(https://s1.dmcdn.net/v/N3T-E1RExXPRa-lPd/x1080);
 }
