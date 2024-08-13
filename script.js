@@ -31,6 +31,11 @@ function validaNCC(ncc){
         return false
     }
 
+    if(ncc.lenght != 19 && ncc.lenght != 23) {
+        alert("Numero errado de caracteres do cartão");
+        return false
+    }
+
     return true
 }
 function validaIdade(idade){
@@ -42,5 +47,5 @@ function validaIdade(idade){
 }
 
 //continuar validacao ncc valido 16 digitos com . e -
-//podendo ser 1234.1234.1234.1234-12
-//ou 123412341234123416
+//podendo ser 1234.1234.1234.1234-123 validar se esse os pontos e hifen tao no lugar correto
+//ou 1234123412341234163
