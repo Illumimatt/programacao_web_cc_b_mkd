@@ -27,12 +27,54 @@ function validaNCC(ncc){
     }
 
     if(!/^[\d.-]+$/.test(ncc)) {
-        alert("Cartão de credito só pode ter numeros, pontos e hifens")
+        alert("Cartão de credito só pode ter numeros, pontos e hifens");
+        return false;
+    }
+
+    if(ncc.length != 11 && ncc.length != 14) {
+        alert("Numero errado de caracteres do cartão");
+        return false;
+    }
+
+    ncc = ncc.replace(/[.-]/g, '');
+
+    let soma = 0;
+    for (let i = 1; i <= 9; i++) {
+        console.log(ncc.charAt(i-1));
+        soma = soma + ncc.charAt(i-1) *(10 - (i-1));
+    }
+    let resto = soma % 11;
+    if(resto < 2){
+        if (ncc.charAt(9) != 0){
+            alert("cpf invalido")
+            return false;
+        }
+    
+    }
+
+    let digitoverificador1= 11 - resto;
+    if (digitoverificador1 != ncc.charAt(9)){
+        alert("digito verificador 1 errado");
         return false
     }
 
-    if(ncc.lenght != 19 && ncc.lenght != 23) {
-        alert("Numero errado de caracteres do cartão");
+    let soma2 = 0;
+    for (let i = 1; i <= 10; i++) {
+        console.log(ncc.charAt(i-1));
+        soma2 = soma2 + ncc.charAt(i-1) *(11 - (i-1));
+    }
+    let resto2 = soma2 % 11
+    if(resto2 < 2){
+        if (ncc.charAt(10) != 0){
+            alert("numero verificador2 invalido")
+            return false;
+        }
+        return true;
+    }
+    
+    let digitoverificador2= 11- resto2;
+    if (digitoverificador2 != ncc.charAt(10)){
+        alert("cpf invalido2");
         return false
     }
 
